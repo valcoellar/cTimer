@@ -1,3 +1,4 @@
+timer1
 Type: Window
 Parent: win1
 Type: Textbox
@@ -87,3 +88,6 @@ stop9
 Type: Button
 stop10
 END:
+StartTimer
+S_timer1
+D_timer1
