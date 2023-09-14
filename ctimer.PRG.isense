@@ -13,7 +13,35 @@ lbl2
 Type: Label
 lbl3
 Type: Label
-lbl4
+time1
 Type: Textbox
 text2
+Type: Textbox
+text3
+Type: Textbox
+text4
+Type: Textbox
+text5
+Type: Textbox
+text6
+Type: Textbox
+text7
+Type: Textbox
+text8
+Type: Textbox
+text9
+Type: Textbox
+text10
+Type: Label
+time5
+Type: Label
+time6
+Type: Label
+time7
+Type: Label
+time8
+Type: Label
+time9
+Type: Label
+time10
 END:

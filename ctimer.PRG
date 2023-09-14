@@ -1,5 +1,5 @@
 *---------------------------------------------------------------------------*
-* Time : 13:07:05    Date : 09/14/2023
+* Time : 13:18:08    Date : 09/14/2023
 *---------------------------------------------------------------------------*
 * Programming Without Coding Technology (PWCT) 
 * 2006-2020 , Mahmoud Fayed <msfclipper@yahoo.com> 
@@ -102,7 +102,7 @@ HEIGHT 22 ;
 FONT "Arial" SIZE 9  ;
 BACKCOLOR {236,233,216} ;
 FONTCOLOR {0,0,0}
-@ 71 ,325 LABEL lbl4 ;
+@ 70 ,316 LABEL time1 ;
 VALUE "00:00:00 " ;
 WIDTH 73 ;
 HEIGHT 22 ;
@@ -178,6 +178,69 @@ FONT "arial" SIZE 9 ;
 BACKCOLOR {255,255,255} ;
 FONTCOLOR {0,0,0} 
 
+@ 235 ,316 LABEL time5 ;
+VALUE "00:00:00" ;
+WIDTH 70 ;
+HEIGHT 20 ;
+FONT "Arial" SIZE 9  ;
+BACKCOLOR {236,233,216} ;
+FONTCOLOR {0,0,0}
+@ 274 ,316 LABEL time6 ;
+VALUE "00:00:00" ;
+WIDTH 70 ;
+HEIGHT 20 ;
+FONT "Arial" SIZE 9  ;
+BACKCOLOR {236,233,216} ;
+FONTCOLOR {0,0,0}
+@ 313 ,316 LABEL time7 ;
+VALUE "00:00:00" ;
+WIDTH 70 ;
+HEIGHT 20 ;
+FONT "Arial" SIZE 9  ;
+BACKCOLOR {236,233,216} ;
+FONTCOLOR {0,0,0}
+@ 352 ,316 LABEL time8 ;
+VALUE "00:00:00" ;
+WIDTH 70 ;
+HEIGHT 20 ;
+FONT "Arial" SIZE 9  ;
+BACKCOLOR {236,233,216} ;
+FONTCOLOR {0,0,0}
+@ 391 ,316 LABEL time9 ;
+VALUE "00:00:00" ;
+WIDTH 70 ;
+HEIGHT 20 ;
+FONT "Arial" SIZE 9  ;
+BACKCOLOR {236,233,216} ;
+FONTCOLOR {0,0,0}
+@ 430 ,316 LABEL time10 ;
+VALUE "00:00:00" ;
+WIDTH 70 ;
+HEIGHT 20 ;
+FONT "Arial" SIZE 9  ;
+BACKCOLOR {236,233,216} ;
+FONTCOLOR {0,0,0}
+@ 118 ,316 LABEL time2 ;
+VALUE "00:00:00 " ;
+WIDTH 70 ;
+HEIGHT 20 ;
+FONT "Arial" SIZE 9  ;
+BACKCOLOR {236,233,216} ;
+FONTCOLOR {0,0,0}
+@ 157 ,316 LABEL time3 ;
+VALUE "00:00:00 " ;
+WIDTH 70 ;
+HEIGHT 20 ;
+FONT "Arial" SIZE 9  ;
+BACKCOLOR {236,233,216} ;
+FONTCOLOR {0,0,0}
+@ 196 ,316 LABEL time4 ;
+VALUE "00:00:00 " ;
+WIDTH 70 ;
+HEIGHT 20 ;
+FONT "Arial" SIZE 9  ;
+BACKCOLOR {236,233,216} ;
+FONTCOLOR {0,0,0}
 END WINDOW
 
 ACTIVATE WINDOW win1
@@ -205,7 +268,7 @@ SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( lbl2 ) , Caption : '00:00:0
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",43,47)
 SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( lbl3 ) , Caption : 'TIME'",48,49)
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",50,54)
-SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( lbl4 ) , Caption : '00:00:00 '",55,56)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time1 ) , Caption : '00:00:00 '",55,56)
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",57,61)
 SS_ESASTEP("Circuits\Main\Main\Main","Define New Statusbar",62,63)
 SS_ESASTEP("Circuits\Main\Main\Main","Items",64,64)
@@ -229,7 +292,25 @@ SS_ESASTEP("Circuits\Main\Main\Main","Define TextBox  ( text9  )",118,118)
 SS_ESASTEP("Circuits\Main\Main\Main","TextBox Properties",119,124)
 SS_ESASTEP("Circuits\Main\Main\Main","Define TextBox  ( text10  )",125,125)
 SS_ESASTEP("Circuits\Main\Main\Main","TextBox Properties",126,131)
-SS_ESASTEP("Circuits\Main\Main\Main","End Of Window",132,133)
-SS_ESASTEP("Circuits\Main\Main\Main","Activate window",134,136)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time5 ) , Caption : '00:00:00'",132,133)
+SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",134,138)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time6 ) , Caption : '00:00:00'",139,140)
+SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",141,145)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time7 ) , Caption : '00:00:00'",146,147)
+SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",148,152)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time8 ) , Caption : '00:00:00'",153,154)
+SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",155,159)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time9 ) , Caption : '00:00:00'",160,161)
+SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",162,166)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time10 ) , Caption : '00:00:00'",167,168)
+SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",169,173)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time2 ) , Caption : '00:00:00 '",174,175)
+SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",176,180)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time3 ) , Caption : '00:00:00 '",181,182)
+SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",183,187)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time4 ) , Caption : '00:00:00 '",188,189)
+SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",190,194)
+SS_ESASTEP("Circuits\Main\Main\Main","End Of Window",195,196)
+SS_ESASTEP("Circuits\Main\Main\Main","Activate window",197,199)
 Return
 *-------------------------------------------------------------------*
