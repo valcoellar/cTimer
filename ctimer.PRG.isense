@@ -50,4 +50,40 @@ Type: Label
 time3
 Type: Label
 time4
+Type: Button
+start2
+Type: Button
+start3
+Type: Button
+start4
+Type: Button
+start5
+Type: Button
+start6
+Type: Button
+start7
+Type: Button
+start8
+Type: Button
+start9
+Type: Button
+start10
+Type: Button
+stop2
+Type: Button
+stop3
+Type: Button
+stop4
+Type: Button
+stop5
+Type: Button
+stop6
+Type: Button
+stop7
+Type: Button
+stop8
+Type: Button
+stop9
+Type: Button
+stop10
 END:

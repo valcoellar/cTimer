@@ -1,5 +1,5 @@
 *---------------------------------------------------------------------------*
-* Time : 13:25:06    Date : 09/14/2023
+* Time : 13:29:05    Date : 09/14/2023
 *---------------------------------------------------------------------------*
 * Programming Without Coding Technology (PWCT) 
 * 2006-2020 , Mahmoud Fayed <msfclipper@yahoo.com> 
@@ -73,7 +73,7 @@ WIDTH 100 HEIGHT 30 ;
 FONT "Arial" SIZE 9 ;
 NOXPSTYLE ;
 TOOLTIP ""
-@ 67 ,538 BUTTONEX stop1;
+@ 67 ,532 BUTTONEX stop1;
 CAPTION "Stop";
 FONTCOLOR {0,0,0};
 BACKCOLOR {236,233,216};
@@ -313,6 +313,78 @@ WIDTH 100 HEIGHT 30 ;
 FONT "Arial" SIZE 9 ;
 NOXPSTYLE ;
 TOOLTIP ""
+@ 107 ,532 BUTTONEX stop2;
+CAPTION "Stop ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 144 ,532 BUTTONEX stop3;
+CAPTION "Stop ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 187 ,532 BUTTONEX stop4;
+CAPTION "Stop ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 226 ,532 BUTTONEX stop5;
+CAPTION "Stop ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 267 ,532 BUTTONEX stop6;
+CAPTION "Stop ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 305 ,532 BUTTONEX stop7;
+CAPTION "Stop ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 346 ,532 BUTTONEX stop8;
+CAPTION "Stop ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 382 ,532 BUTTONEX stop9;
+CAPTION "Stop ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 421 ,532 BUTTONEX stop10;
+CAPTION "Stop ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
 END WINDOW
 
 ACTIVATE WINDOW win1
@@ -400,7 +472,25 @@ SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start9 ) , Caption : '
 SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",255,258)
 SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start10 ) , Caption : 'Start '",259,262)
 SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",263,266)
-SS_ESASTEP("Circuits\Main\Main\Main","End Of Window",267,268)
-SS_ESASTEP("Circuits\Main\Main\Main","Activate window",269,271)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( stop2 ) , Caption : 'Stop '",267,270)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",271,274)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( stop3 ) , Caption : 'Stop '",275,278)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",279,282)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( stop4 ) , Caption : 'Stop '",283,286)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",287,290)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( stop5 ) , Caption : 'Stop '",291,294)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",295,298)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( stop6 ) , Caption : 'Stop '",299,302)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",303,306)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( stop7 ) , Caption : 'Stop '",307,310)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",311,314)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( stop8 ) , Caption : 'Stop '",315,318)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",319,322)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( stop9 ) , Caption : 'Stop '",323,326)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",327,330)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( stop10 ) , Caption : 'Stop '",331,334)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",335,338)
+SS_ESASTEP("Circuits\Main\Main\Main","End Of Window",339,340)
+SS_ESASTEP("Circuits\Main\Main\Main","Activate window",341,343)
 Return
 *-------------------------------------------------------------------*
