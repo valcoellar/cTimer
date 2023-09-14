@@ -1,5 +1,5 @@
 *---------------------------------------------------------------------------*
-* Time : 13:18:08    Date : 09/14/2023
+* Time : 13:25:06    Date : 09/14/2023
 *---------------------------------------------------------------------------*
 * Programming Without Coding Technology (PWCT) 
 * 2006-2020 , Mahmoud Fayed <msfclipper@yahoo.com> 
@@ -52,7 +52,7 @@ if !iswindowdefined( win1 )
 DEFINE WINDOW win1 ;
 AT 10 ,10 ;
 WIDTH 669 ;
-HEIGHT 526 ;
+HEIGHT 529 ;
 ICON "PWCTICON" ;
 TITLE "CTimer V0.1  " ;
 MAIN ;
@@ -65,7 +65,7 @@ FONT "arial" SIZE 9 ;
 BACKCOLOR {255,255,255} ;
 FONTCOLOR {0,0,0} 
 
-@ 67 ,428 BUTTONEX btn3;
+@ 67 ,419 BUTTONEX start1;
 CAPTION "Start";
 FONTCOLOR {0,0,0};
 BACKCOLOR {236,233,216};
@@ -73,7 +73,7 @@ WIDTH 100 HEIGHT 30 ;
 FONT "Arial" SIZE 9 ;
 NOXPSTYLE ;
 TOOLTIP ""
-@ 67 ,538 BUTTONEX btn4;
+@ 67 ,538 BUTTONEX stop1;
 CAPTION "Stop";
 FONTCOLOR {0,0,0};
 BACKCOLOR {236,233,216};
@@ -241,6 +241,78 @@ HEIGHT 20 ;
 FONT "Arial" SIZE 9  ;
 BACKCOLOR {236,233,216} ;
 FONTCOLOR {0,0,0}
+@ 106 ,419 BUTTONEX start2;
+CAPTION "Start ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 145 ,419 BUTTONEX start3;
+CAPTION "Start ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 188 ,419 BUTTONEX start4;
+CAPTION "Start ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 227 ,419 BUTTONEX start5;
+CAPTION "Start ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 266 ,419 BUTTONEX start6;
+CAPTION "Start ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 305 ,419 BUTTONEX start7;
+CAPTION "Start ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 344 ,419 BUTTONEX start8;
+CAPTION "Start ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 383 ,419 BUTTONEX start9;
+CAPTION "Start ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
+@ 422 ,419 BUTTONEX start10;
+CAPTION "Start ";
+FONTCOLOR {0,0,0};
+BACKCOLOR {236,233,216};
+WIDTH 100 HEIGHT 30 ;
+FONT "Arial" SIZE 9 ;
+NOXPSTYLE ;
+TOOLTIP ""
 END WINDOW
 
 ACTIVATE WINDOW win1
@@ -258,9 +330,9 @@ SS_ESASTEP("Circuits\Main\Main\Main","Define New Window  ( win1 ) , Title : 'CTi
 SS_ESASTEP("Circuits\Main\Main\Main","Window Properties",6,10)
 SS_ESASTEP("Circuits\Main\Main\Main","Define TextBox  ( text1  )",11,11)
 SS_ESASTEP("Circuits\Main\Main\Main","TextBox Properties",12,17)
-SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( btn3 ) , Caption : 'Start'",18,21)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start1 ) , Caption : 'Start'",18,21)
 SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",22,25)
-SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( btn4 ) , Caption : 'Stop'",26,29)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( stop1 ) , Caption : 'Stop'",26,29)
 SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",30,33)
 SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( lbl1 ) , Caption : 'Total Time'",34,35)
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",36,40)
@@ -310,7 +382,25 @@ SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time3 ) , Caption : '00:00:
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",183,187)
 SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( time4 ) , Caption : '00:00:00 '",188,189)
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",190,194)
-SS_ESASTEP("Circuits\Main\Main\Main","End Of Window",195,196)
-SS_ESASTEP("Circuits\Main\Main\Main","Activate window",197,199)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start2 ) , Caption : 'Start '",195,198)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",199,202)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start3 ) , Caption : 'Start '",203,206)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",207,210)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start4 ) , Caption : 'Start '",211,214)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",215,218)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start5 ) , Caption : 'Start '",219,222)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",223,226)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start6 ) , Caption : 'Start '",227,230)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",231,234)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start7 ) , Caption : 'Start '",235,238)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",239,242)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start8 ) , Caption : 'Start '",243,246)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",247,250)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start9 ) , Caption : 'Start '",251,254)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",255,258)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Button ( start10 ) , Caption : 'Start '",259,262)
+SS_ESASTEP("Circuits\Main\Main\Main","Button Properties",263,266)
+SS_ESASTEP("Circuits\Main\Main\Main","End Of Window",267,268)
+SS_ESASTEP("Circuits\Main\Main\Main","Activate window",269,271)
 Return
 *-------------------------------------------------------------------*

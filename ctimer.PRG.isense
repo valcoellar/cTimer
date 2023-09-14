@@ -3,9 +3,9 @@ Parent: win1
 Type: Textbox
 text1
 Type: Button
-btn3
+start1
 Type: Button
-btn4
+stop1
 Type: Label
 lbl1
 Type: Label
@@ -44,4 +44,10 @@ Type: Label
 time9
 Type: Label
 time10
+Type: Label
+time2
+Type: Label
+time3
+Type: Label
+time4
 END:
