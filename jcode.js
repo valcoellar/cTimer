@@ -46,32 +46,25 @@ class cTimer {
     constructor(selectTaskLine) {
         this.Tline = selectTaskLine;
         this.minutos = 0;
-}
+    }
  
 cTimerStart(){
-   
-       
-       let idInterval = setInterval(() => {
+        let idInterval = setInterval(() => {
         this.minutos++;
-            // console.log(this.Tline);
-        $(this.Tline).text(this.minutos);
+                // format the minutos counter to time 00:00:00 format
+                let hours = Math.floor(this.minutos / 3600);
+                let minutes = Math.floor((this.minutos % 3600) / 60);
+                let seconds = this.minutos % 60;
+                let timeString = hours.toString().padStart(2, '0') + ':' +
+                                minutes.toString().padStart(2, '0') + ':' +
+                                seconds.toString().padStart(2, '0');
+        // change the text of couter for timeString
+        $(this.Tline).text(timeString);
         }, 1000);
     }
 
 }
 
-
-/*  idea to convert to time
-setInterval(() => {
-  this.minutos++;
-  let hours = Math.floor(this.minutos / 3600);
-  let minutes = Math.floor((this.minutos % 3600) / 60);
-  let seconds = this.minutos % 60;
-  let timeString = hours.toString().padStart(2, '0') + ':' +
-                   minutes.toString().padStart(2, '0') + ':' +
-                   seconds.toString().padStart(2, '0');
-  $(this.Tline).text(timeString);
-}, 1000);
 
 */ 
 
