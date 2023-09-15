@@ -53,12 +53,27 @@ cTimerStart(){
        
         setInterval(() => {
         this.minutos++;
-            console.log(this.Tline);
+            // console.log(this.Tline);
         $(this.Tline).text(this.minutos);
         }, 1000);
     }
 
 }
+
+
+/*  idea to convert to time
+setInterval(() => {
+  this.minutos++;
+  let hours = Math.floor(this.minutos / 3600);
+  let minutes = Math.floor((this.minutos % 3600) / 60);
+  let seconds = this.minutos % 60;
+  let timeString = hours.toString().padStart(2, '0') + ':' +
+                   minutes.toString().padStart(2, '0') + ':' +
+                   seconds.toString().padStart(2, '0');
+  $(this.Tline).text(timeString);
+}, 1000);
+
+*/ 
 
 
 
