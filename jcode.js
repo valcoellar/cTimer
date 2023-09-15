@@ -1,11 +1,20 @@
 $(function(){
 // jcode file
 
+
+/* TO Do
+-reset button
+-stop button
+-pause button
+-increase range of task from 0-9 to 0-n...
+*/
+
+
 /* add task */
 let activeTask = 1;
 
 $(".addTask").click(function(){
-    $(".tasksContainer").append("<div class='taskLine' id='task" + activeTask + "'><input type='text'><h3 class='counter" + activeTask + "'>00:00:00</h3><button type='button' name='start" + activeTask + "' class='start" + activeTask + "'>Start</button><button type='button' name='stop' class='stop" + activeTask + "'>Stop</button></div>"); 
+    $(".tasksContainer").append("<div class='taskLine' id='task" + activeTask + "'><input type='text'><h3 class='counter" + activeTask + "'>00:00:00</h3><button type='button' name='start" + activeTask + "' class='start" + activeTask + "'>Start</button><button type='button' name='stop" + activeTask +"' class='stop" + activeTask + "'>Stop</button></div>"); 
     activeTask += 1;
     if (activeTask > 0) {
         $(".removeTask").show();
@@ -41,15 +50,17 @@ $(".removeTask").click(function(){
 */
 
 
-/* start task*/
+/* start - stop task*/
 class cTimer {
     constructor(selectTaskLine) {
         this.Tline = selectTaskLine;
         this.minutos = 0;
+        
     }
  
 cTimerStart(){
         let idInterval = setInterval(() => {
+           
         this.minutos++;
                 // format the minutos counter to time 00:00:00 format
                 let hours = Math.floor(this.minutos / 3600);
@@ -63,22 +74,13 @@ cTimerStart(){
         }, 1000);
     }
 
+cTimerStop(){
+    console.log("TestPoint:  TIMER STOP")
+    clearInterval(idInterval);
 }
 
 
-*/ 
-
-/* idea to stop interval
-let contador = 0;
-let idIntervalo = setInterval(function() {
-  contador++;
-  console.log(contador);
-  if (contador === 10) {
-    clearInterval(idIntervalo);
-  }
-}, 1000);
-*/
-
+}
 
 
 
@@ -97,17 +99,21 @@ $(document).on("click", "[class^='start']", function(event) {   // selects all t
 // call dinamically the instance    
     newTaskTime[indexNum].cTimerStart();
 
-
 });
 
+/* stop task button*/
+$(document).on("click", "[class^='stop']", function(event) {   // selects all that starts with start
+    let indexNum =  (event.target.name.slice(-1));
+    selectTaskLine = ".counter" + indexNum;   // selectTaskLine = ".counter1" ".counter2" ....
+    console.log(selectTaskLine);
 
-/*
-  setInterval(function() {
-  
-}, 1000); 
 
-*/
+// create dinamically an instance of the cTimer class
+    //newTaskTime[indexNum] = new cTimer(selectTaskLine);
+// call dinamically the instance    
+    newTaskTime[indexNum].cTimerStop();
 
+});
 
 
 })
