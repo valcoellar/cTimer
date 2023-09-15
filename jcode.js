@@ -45,14 +45,16 @@ $(".removeTask").click(function(){
 class cTimer {
     constructor(selectTaskLine) {
         this.Tline = selectTaskLine;
+        this.minutos = 0;
 }
  
-cTimerStart() {
-    let minutos = 0;
-
-    setInterval(function() {
-        minutos++;
-        $(this.TLine).text(minutos);
+cTimerStart(){
+   
+       
+        setInterval(() => {
+        this.minutos++;
+            console.log(this.Tline);
+        $(this.Tline).text(this.minutos);
         }, 1000);
     }
 
@@ -62,19 +64,19 @@ cTimerStart() {
 
 
 let selectTaskLine ="";
+let newTaskTime = [];
+
 $(document).on("click", "[class^='start']", function(event) {   // selects all that starts with start
-    selectTaskLine = ".counter" + (event.target.name.slice(-1));   // selectTaskLine = ".counter1" ".counter2" ....
+    let indexNum =  (event.target.name.slice(-1));
+    selectTaskLine = ".counter" + indexNum;   // selectTaskLine = ".counter1" ".counter2" ....
     console.log(selectTaskLine);
-    //$(selectTaskLine).parent().css("background","red");
 
 
-// create an instance of the cTimer class
-    let newTaskTime = new cTimer(selectTaskLine);
-    cTimer.cTimerStart();
+// create dinamically an instance of the cTimer class
+    newTaskTime[indexNum] = new cTimer(selectTaskLine);
+// call dinamically the instance    
+    newTaskTime[indexNum].cTimerStart();
 
-
-    
-  
 
 });
 
