@@ -51,7 +51,7 @@ class cTimer {
 cTimerStart(){
    
        
-        setInterval(() => {
+       let idInterval = setInterval(() => {
         this.minutos++;
             // console.log(this.Tline);
         $(this.Tline).text(this.minutos);
@@ -74,6 +74,18 @@ setInterval(() => {
 }, 1000);
 
 */ 
+
+/* idea to stop interval
+let contador = 0;
+let idIntervalo = setInterval(function() {
+  contador++;
+  console.log(contador);
+  if (contador === 10) {
+    clearInterval(idIntervalo);
+  }
+}, 1000);
+*/
+
 
 
 
