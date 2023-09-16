@@ -5,7 +5,7 @@ background: linear-gradient(to bottom, #1CB5E0, #000046);
 
     background-repeat: no-repeat;
     height: 100%;
-    
+   
 }
 
 .poly{
@@ -17,11 +17,21 @@ background: linear-gradient(to bottom, #1CB5E0, #000046);
     clip-path: polygon(0% 0%, 49.97% 78.28%, 100% 100%, 0% 100%);
     background: linear-gradient(24deg, rgba(115,34,195,1) 0%, rgba(253,187,45,1) 100%);
     z-index: -1;
+  
     
-    
-
 }
 
+.blurElement{
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    /* blur */
+    backdrop-filter: blur(10px); 
+    background-color: rgb(136, 136, 238, 0.1);
+}
 
 h2{
     font-family: Arial;
@@ -47,7 +57,7 @@ h2{
    border-radius: 25px;
 
    box-shadow: 15px 15px 43px -5px #000000;
-
+z-index: 50;
 }
 
 
