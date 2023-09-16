@@ -1,12 +1,15 @@
+
 html{
-    background: #000046;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background: #000046; 
+background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  
+background: linear-gradient(to bottom, #1CB5E0, #000046); 
 
     background-repeat: no-repeat;
     height: 100%;
 
 }
+
 
 /* app container */
 .appContainer {
@@ -14,6 +17,13 @@ background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, 
     margin-right: 25%;
     margin-top: 25px;;
    /* transform: skew(20deg);  */
+   
+   background: rgba(255,255,255,0.45);
+   -webkit-backdrop-filter: blur(2px);
+   backdrop-filter: blur(2px);
+   border: 1px solid rgba(255,255,255,0.225);
+   border-radius: 25px;
+
 }
 
 
@@ -58,6 +68,20 @@ background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, 
     margin-left: 10px;
     margin-top: 10px;
 }
+
+#textField{
+    border-top: none;
+    border-left: none;
+    font-size: 24px;
+
+    background: rgba(255,255,255,0.15);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.225);
+    border-radius: 15px;
+
+}
+
 
 #stopButton {
     margin-left: 10px;
