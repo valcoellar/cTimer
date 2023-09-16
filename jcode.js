@@ -55,11 +55,11 @@ class cTimer {
     constructor(selectTaskLine) {
         this.Tline = selectTaskLine;
         this.minutos = 0;
-        
+        this.idInterval;
     }
  
 cTimerStart(){
-        let idInterval = setInterval(() => {
+        this.idInterval = setInterval(() => {
            
         this.minutos++;
                 // format the minutos counter to time 00:00:00 format
@@ -76,7 +76,7 @@ cTimerStart(){
 
 cTimerStop(){
     console.log("TestPoint:  TIMER STOP")
-    clearInterval(idInterval);
+    clearInterval(this.idInterval);
 }
 
 
