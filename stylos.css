@@ -1,21 +1,35 @@
-
 html{
-
 background: #000046; 
 background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  
 background: linear-gradient(to bottom, #1CB5E0, #000046); 
 
     background-repeat: no-repeat;
     height: 100%;
+    
+}
+
+.poly{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    clip-path: polygon(0% 0%, 49.97% 78.28%, 100% 100%, 0% 100%);
+    background: linear-gradient(24deg, rgba(115,34,195,1) 0%, rgba(253,187,45,1) 100%);
+    z-index: -1;
+    
+    
 
 }
+
 
 h2{
     font-family: Arial;
     font-size: 24px;
    }
 
-hr{
+
+   hr{
     width: 90%;
 }
 
@@ -114,4 +128,8 @@ button{
 
 #textField{
     margin-right: 20px;
+    
 }
+
+
+
