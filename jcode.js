@@ -5,7 +5,7 @@ $(function(){
 /* TO Do
 -pause button
 -continue button
--increase range of task from 0-9 to 0-n...
+-limit to 10 task`s
 -(verify timers)
 -css styles
 */
