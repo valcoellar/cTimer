@@ -10,6 +10,11 @@ background: linear-gradient(to bottom, #1CB5E0, #000046);
 
 }
 
+h2{
+    font-family: Arial;
+    font-size: 24px;
+   }
+
 hr{
     width: 90%;
 }
@@ -57,7 +62,7 @@ button{
 #totalTime{
     margin-top: 25px;
     font-size: 24px;
-}
+   }
 
 
 
