@@ -1,9 +1,19 @@
+html{
+    background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+
 /* app container */
 .appContainer {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 25px;;
-      
+   /* transform: skew(20deg);  */
 }
 
 
@@ -15,7 +25,7 @@
     display: flex;
   justify-content:space-around;
     width: 600px;
-    
+    margin-bottom: 25px;
 }
 
 #addButton {
@@ -36,6 +46,7 @@
 /* Tasks*/
 .tasksContainer {
     width: 600px;
+    margin-top: 25px;
     
 }
 
