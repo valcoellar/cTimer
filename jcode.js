@@ -3,10 +3,11 @@ $(function(){
 
 
 /* TO Do
--reset button
--stop button
 -pause button
+-continue button
 -increase range of task from 0-9 to 0-n...
+-(verify timers)
+-css styles
 */
 
 
@@ -14,7 +15,7 @@ $(function(){
 let activeTask = 1;
 
 $(".addTask").click(function(){
-    $(".tasksContainer").append("<div class='taskLine' id='task" + activeTask + "'><input type='text'><h3 class='counter" + activeTask + "'>00:00:00</h3><button type='button' name='start" + activeTask + "' class='start" + activeTask + "'>Start</button><button type='button' name='stop" + activeTask +"' class='stop" + activeTask + "'>Stop</button></div>"); 
+    $(".tasksContainer").append("<div class='taskLine' id='task" + activeTask + "'><input id='textField' type='text'><h3 class='counter" + activeTask + "'>00:00:00</h3><button type='button' name='start" + activeTask + "' id='startButton' class='start" + activeTask + "'>Start</button><button type='button' name='stop" + activeTask +"' id='stopButton' class='stop" + activeTask + "'>Stop</button></div>"); 
     activeTask += 1;
     if (activeTask > 0) {
         $(".removeTask").show();
@@ -61,6 +62,10 @@ class cTimer {
 cTimerStart(){
         this.idInterval = setInterval(() => {
            
+
+
+
+            
         this.minutos++;
                 // format the minutos counter to time 00:00:00 format
                 let hours = Math.floor(this.minutos / 3600);

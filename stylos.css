@@ -1,0 +1,42 @@
+/* Header*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tasks*/
+.tasksContainer {
+    width: 600px;
+    
+}
+
+.taskLine {
+    display: flex;
+  justify-content:space-between
+    background-color: red;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#stopButton {
+    margin-left: 10px;
+
+
+}
+
+#startButton {
+    margin-left: 10px;
+}
+
+#textField{
+    margin-right: 20px;
+}
