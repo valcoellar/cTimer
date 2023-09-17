@@ -141,5 +141,10 @@ button{
     
 }
 
-
+.author{
+    display: grid;
+    justify-content: center;
+    font-size: 10px;
+    color: whitesmoke;
+}
 
