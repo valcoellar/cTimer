@@ -35,20 +35,6 @@ $(".removeTask").click(function(){
   });
 
 
-  /*
-  $('body').on('click', '.task1', function(event) {
-    var selector = $(event.target).attr('class');
-    console.log(selector);
-  });
-
-/* to remove all that starts with start &  
-  $(document).on("click", "[class^='start']", function(event) {   // selects all that starts with start
-      console.log(event.target);
-      $(event.target).parent().remove();
-      
-  
-    });
-*/
 
 
 /* start - stop task*/
@@ -57,7 +43,7 @@ class cTimer {
         this.Tline = selectTaskLine;
         this.minutos = 0;
         this.idInterval;
-    }
+        }
  
 cTimerStart(){
         this.idInterval = setInterval(() => {
@@ -80,7 +66,7 @@ cTimerStart(){
     }
 
 cTimerStop(){
-    console.log("TestPoint:  TIMER STOP")
+    console.log("TIMER STOP")
     clearInterval(this.idInterval);
 }
 
@@ -100,10 +86,11 @@ $(document).on("click", "[class^='start']", function(event) {   // selects all t
 
 
 // create dinamically an instance of the cTimer class
-    newTaskTime[indexNum] = new cTimer(selectTaskLine);
+     newTaskTime[indexNum] = new cTimer(selectTaskLine);
 // call dinamically the instance    
-    newTaskTime[indexNum].cTimerStart();
-
+     newTaskTime[indexNum].cTimerStart();
+   
+    
 });
 
 /* stop task button*/
@@ -113,12 +100,21 @@ $(document).on("click", "[class^='stop']", function(event) {   // selects all th
     console.log(selectTaskLine);
 
 
-// create dinamically an instance of the cTimer class
-    //newTaskTime[indexNum] = new cTimer(selectTaskLine);
 // call dinamically the instance    
     newTaskTime[indexNum].cTimerStop();
 
 });
+
+
+/* totalTasks */
+let totalsCounters;
+
+setInterval(function() {
+     totalsCounters = ($("[class^='counter']")).length;  // audit tasks via class
+     $(".totalTime").text(totalsCounters);
+        }, 1000);
+
+
 
 
 })
