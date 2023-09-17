@@ -6,8 +6,6 @@ $(function(){
 -pause button
 -continue button
 -limit to 10 task`s
--(verify timers)
--css styles
 */
 
 
